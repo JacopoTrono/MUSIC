@@ -1,0 +1,19 @@
+import random
+
+group_a = ['C', 'D', 'E', 'F', 'G', 'A', 'B', 'C#', 'D#', 'E#', 'F#', 'G#', 'A#', 'B#', 'C#', 'Cb', 'Db', 'Eb', 'Fb', 'Gb', 'Ab', 'Bb', 'Cb']
+group_b = ['C', 'A', 'G', 'E', 'D']
+group_c = ["Ionico", "Dorico", "Frigio", "Lidio", "Misolidio", "Eolio", "Locrio", "Eolio 7M", "Minore Armonica", "Ionico 5#", "Dorico 4#", "Frigio Dominante", "Lidio 2#", "Superlocrio Diminuito", "Minore Melodica", "Dorico 2b", "Lidio 5#", "Lidio Dominante", "Misolidio 6b", "Eolio 5b", "Superlocrio", "Pentatonica Minore", "Pentatonica Maggiore", "Esatonale", "Semitono-Tono", "Tono-Semitono"]
+group_d = ['X7', 'Xm7', 'Xm7b5', 'Xmaj7', 'X7dim', 'Xm/maj7', 'Xmaj7(#5)']
+group_e = ["Xsus2", "Xsus4", "X7sus2", "X7sus4", "Xmaj9", "Xmaj11", "Xmaj7add13", "X6/9", "X6", "X9", "X11", "X13", "Xadd9", "Xm(add9)", "Xm9", "Xm11", "Xm6", "Xm/maj7(b5)", "Xmaj7(b5)", "Xaug (triade)", "Xdim (triade)", "X7(#5)", "X7(b9)", "X7(#5b9)", "X7(b5#9)", "X7(b5b9)", "X7(#5#9)", "Xm11(b9b13)", "Xmaj7(#5)", "Xmaj7(#11)", "X7sus2(#5)", "X7sus4(add9)"]
+
+Nota = random.choice(group_a)
+letter = random.choice(group_b)
+scale = random.choice(group_c)
+specie = random.choice(group_d)
+accordo = random.choice(group_e)
+
+print(f'Root Note: {Nota}')
+print(f'CAGED Shape: {letter}')
+print(f'Scale: {scale}')
+print(f'Quadriad: {specie}')
+print(f'Chord: {accordo}')
