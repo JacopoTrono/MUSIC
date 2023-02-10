@@ -1,0 +1,16 @@
+# Codice temporizzato espedienti improvvisativi
+
+import random
+import time
+
+group_a = ['Toni congiunti', 'Scala modale', 'Pentatonica', 'Coltrane Patterns', 'Kumoj', 'Hirajoshi', 'Melodia Ottavata', 'Pick Chirp', 'Rake', 'Tremolo picking', 'Tapping', 'Slides', 'Armonici', 'Tensione','Arpeggi Quadriadi', 'Superimposing Pentatonics', 'Corda Singola', 'Let Ring', 'Arpeggi', 'Spread Triads', 'Toni Chiusi', 'Melodia Armonizzata', 'Coppie di Corde', 'Melodie Ottavate']
+
+def choose_random():
+    Espediente = random.choice(group_a)
+
+    print(f' {Espediente}')
+    print("-"*20)
+    
+while True:
+    choose_random()
+    time.sleep(10)
